@@ -1,0 +1,522 @@
+
+/* Reusable styles */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color:white;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 1.2em;
+  color: #545454;;
+  line-height: 1.5;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 5%;
+  background-color:#fff;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+h1,h2,h3{
+  font-family: 'Roboto Condensed', sans-serif;
+  color:#000080;
+  font-weight: 700;
+}
+h1{
+  font-size: 60px;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+h2{
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+h3{
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+h4{
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: normal;
+}
+h5{
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+i{
+  display: block;
+  font-size: 40px;
+  color: #4d217d;
+}
+.label{
+  display: flex;
+  font-size: 14px;
+}
+.input{
+  display: flex;
+  margin-bottom: 15px;
+  padding: 8px 10px;
+  width: 450px;
+  outline: none;
+  border:1px solid gainsboro;
+  border-radius: 8px;
+}
+.container{
+  max-width: 100%;
+  margin: 0 auto;
+}
+.layout{
+  padding: 100px 5%;
+}
+.border{
+  border: 1px solid blueviolet;
+  border-radius: 15px;
+}
+.btn{
+  text-decoration: none;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow:inset 0px 39px 0px -24px rgb(111, 47, 171);
+  text-shadow:inset 0px 1px 0px whitesmoke;
+  background:blueviolet;
+}
+.btn:hover{
+  background-color: rgb(111, 47, 171);
+  transition: all 0.9s ease;
+}
+.logo>img{
+  width: 150px;
+}
+.toggle-button{
+  position: relative;
+  bottom: 1.2rem;
+  right: .5rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width:30px ;
+  height: 21px;
+}
+.bar{
+  width: 100%;
+  height: 3px;
+  background-color: #5e54d1;
+  border-radius: 10px;
+}
+.links ul{
+  display: flex;
+  list-style: none;
+}
+.links a{
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+.links li{
+  padding: 10px;
+  position: relative;
+}
+#active{
+  color: #6f2fab;
+  text-decoration: underline;
+}
+li, a, .btn{
+  font-size: 16px;
+  font-weight: 500;
+}
+.links li a{
+  transition: all 0.5s ease; 
+}
+.links li a:hover{
+  color: black;
+}
+
+
+/***************** Home ********************/
+/* hero section */
+.hero-section{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0 5%;
+}
+.hero1 span{
+  color: green;
+}
+.hero1>p{
+  font-size: 40px;
+  color: #5e54d1;
+}
+.hero2{
+  padding: 50px 30px;
+  width: 70%;
+}
+.hero2>div{
+  margin-bottom: 20px;
+}
+.checkbox-label{
+  display: inline-block;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.cta{
+  border: 1px solid rgb(111, 47, 171) ;
+  border-radius: 5px;
+  margin-right: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.cta:hover{
+  background-color:rgb(111, 47, 171);
+  color: white;
+}
+
+/* video section */
+.video-section{
+  text-align: center;
+}
+iframe{
+  width: 80%;
+  height: 500px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+/* features section */
+.features-section{
+  text-align: center;
+  background-color: #f5f5f5;
+}
+.slider-section  {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: whitesmoke;
+  overflow: hidden;
+}
+.swiper {
+  width: 100%;
+  padding-bottom: 50px;
+}
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 550px;
+  background-color: #fff;
+  text-align: center;
+}
+.featuresBox{
+  position: relative;
+  width: 100%;
+  padding:60px 40px 40px;
+}
+
+/* benefit section */
+.benefit-section{
+  background-color: #4d217d;
+  text-align: center;
+}
+.benefit-section>div{
+  background-color: white;
+  border-radius: 100px;
+  width: 100%;
+  padding-top: 30px;
+}
+.benefit-section img{
+  position: relative;
+  top: 10px;
+  border-radius: 100px 100px 0 0;
+  width: 100%;
+}
+
+/* impact section */
+.impact-section{
+  text-align: center;
+}
+.impact-section>h2{
+  margin-bottom: 0;
+}
+.kura-impact-text{
+  margin-bottom: 20px;
+}
+.impact-section>div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.box{
+  border: 1px solid blueviolet;
+  border-radius: 15px;
+  max-width: 250px;
+  height: 400px;
+  padding: 40px 20px;
+}
+.box >img{
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+.box>p{
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+#extra-mb{
+  margin-bottom: 35px;
+}
+#extra-mb2{
+  margin-bottom: 55px;
+}
+
+/* testimonial section */
+.testimonial-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20;
+}
+.user-rating{
+  display: block;
+  margin-bottom: 20px;
+  width: 400px;
+  height: 93px;
+  border: 1px solid blueviolet;
+  border-top-left-radius:8px;
+}
+.circular-div{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: blueviolet;
+}
+.user-rating-img{
+  position: relative;
+  left: 50px;
+  bottom: 30px;
+  width: 200px;
+}
+
+/* education section */
+.education-section{
+  background-color: #4d217d;
+}
+swiper-container {
+  width: 70%;
+  border-radius: 25px;
+}
+swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+swiper-slide img {
+  display: block;
+  width: 100%;
+}
+.edu{
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+.edu>h1{
+  font-size: 3rem;
+  margin-right: auto;
+  color: white;
+}
+.card-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.card{
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 120px;
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 0 20px;
+}
+
+
+
+/************** Footer **************/
+footer{ 
+  background-color:#e9ebec;
+  padding: 50px 0 20px;
+}
+footer a{
+  display: flex;
+  text-decoration: none;
+  color: blueviolet;
+}
+.top-footer{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.top-footer>h1{
+  line-height: normal;
+}
+.qr-code{
+  font-size: 100px;
+  color: black;
+}
+.get-app{
+  display: flex;
+  align-items: center;
+  gap:20px;
+  border-radius: 10px;
+  background-color: #4d217d;
+  color: #fff;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+#get-app-h5{
+  margin: 0;
+}
+#share-icon{
+  color: #fff;
+}
+.bottom-footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap:20px;
+}
+.bottom-footer-logo{
+  display: flex;
+  width: 100px;
+  margin-bottom: 10px;
+}
+.social_icon_wraper{
+  display: flex;
+  gap: 5px;
+}
+#social_icon{
+  font-size: 20px;
+}
+.copy{
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 30px;
+}
+
+  /* Mobile Responsiveness */
+@media (max-width:800px){
+  /* header */
+  .toggle-button{
+    display: flex;
+  }
+  header{
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .logo{
+    margin-right: auto;
+  }
+  nav{
+    display: none;
+  }
+  ul{
+    flex-direction: column;
+  }
+  .links ul{
+    margin-top: 1rem;
+  }
+  .links li{
+    text-align: right;
+  }
+  .btn{
+    display: none;
+    margin: 10px 0 0 10px;
+  }
+  .active{
+    display: flex;
+  }
+  /* home */
+  h1{
+    font-size: 3em;
+    line-height: 1;
+    margin:35px 0;
+  }
+  h2{
+    font-size: 1.5em;
+    line-height: normal;
+  }
+  .input{
+    width: 300px;
+  }
+  .hero-section{
+    flex-direction: column;
+  }
+  .hero1>p{
+    font-size: 30px;
+    line-height: normal;
+  }
+  .hero2{
+    width: 100%;
+  }
+   /* benefit section */
+  .benefit-section>div{
+    border-radius: 10px;
+  }
+  .benefit-section img{
+    border-radius: 10px 10px 0 0;
+  }
+  /* impact section */
+  
+  /* testimonial section */
+  .testimonial-section{
+    justify-content: center;
+  }
+  .user-rating{
+    width: 300px;
+  }
+  .circular-div{
+    margin:30px 0 40px;
+  }
+  /* education section */
+  swiper-container {
+    width: 100%;
+  }
+  .edu{
+    flex-direction: column;
+  }
+  .edu>h1{
+    margin-right: 0;
+    font-size: 1.5em;
+  }
+  .card{
+    width: 300px;
+  }
+  /* footer */
+  .top-footer>h1{
+    font-size:1em;
+  }
+}

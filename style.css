@@ -615,11 +615,14 @@ margin-bottom: 40px;
 }
 
 /*********************************** FAQ Page  *******************************/
+.faq_img{
+  width: 100%;
+}
 .faq-question {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 30px;
+  gap: 15px;
   background-color: #eee;
   padding: 10px 2rem;
   border-radius: 5px;
@@ -765,7 +768,6 @@ footer a{
   .active{
     display: flex;
   }
-  /*********************************** Home Page *******************************/
   h1{
     font-size: 3em;
     line-height: 1;
@@ -775,6 +777,7 @@ footer a{
     font-size: 1.5em;
     line-height: normal;
   }
+  /*********************************** Home Page *********************************/
   .input{
     width: 300px;
   }
@@ -870,6 +873,9 @@ footer a{
   }
   .book_store_text{
     text-align: center;
+  }
+  .faq-question h3{
+    font-size: .8em;
   }
 
   /*********************************** FAQ Page  *******************************/

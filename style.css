@@ -614,6 +614,59 @@ margin-bottom: 40px;
   text-decoration: underline;
 }
 
+/*********************************** FAQ Page  *******************************/
+.faq-question {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  background-color: #eee;
+  padding: 10px 2rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+.faq-question h3{
+  font-size: 1.3rem;
+  margin-bottom: 0;
+}
+.faq-answer {
+  display: none;
+  background-color: #fff;
+  padding: .5rem;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+  margin-top: -1rem;
+}
+.faq-toggle {
+  font-size: 2rem;
+  background-color: #eee;
+  border: none;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.faq-toggle:focus {
+  outline: none;
+}
+/* .faq-toggle.active {
+  background-color: #000;
+  color: #fff;
+} */
+.faq-toggle.active:before {
+  content: '-';
+  width: 50px;
+}
+.faq-toggle:before {
+  content: '+';
+}
+.active{
+  display: flex;
+}
+
 /********************************** Footer *************************************/
 footer{ 
   background-color:#e9ebec;
@@ -680,7 +733,7 @@ footer a{
   margin-top: 30px;
 }
 
-  /* Mobile Responsiveness */
+  /**************************** Mobile Responsiveness **************************/
 @media (max-width:800px){
   /* header */
   .toggle-button{
@@ -818,6 +871,8 @@ footer a{
   .book_store_text{
     text-align: center;
   }
+
+  /*********************************** FAQ Page  *******************************/
 
   /************************************** footer *******************************/
   .top-footer>h1{

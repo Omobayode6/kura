@@ -10,7 +10,7 @@ body{
   font-family: 'Times New Roman', Times, serif;
   font-weight: 400;
   font-size: 1.2em;
-  color: #545454;;
+  color: #2a2929;;
   line-height: 1.5;
 }
 header{
@@ -219,7 +219,7 @@ iframe{
   background-position: center;
   background-size: cover;
   width: 300px;
-  height: 550px;
+  height: 580px;
   background-color: #fff;
   text-align: center;
 }
@@ -360,6 +360,164 @@ swiper-slide img {
   padding: 0 20px;
 }
 
+/***************** About ****************/
+/* innovation-section */
+.innovation-section {
+  position: relative; 
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+.innovation-section::before {    
+    content: "";
+    background-image: url(./assets/images/female-student.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.25;
+    border-radius: 0 0 15px 15px;
+}
+.innovation-header{
+  margin-top: 50px;
+  padding: 0 10%;
+}
+.innovation-footer{
+  position: absolute;
+  bottom: 0;
+  background-color: #4d217d;
+  opacity: 0.68;
+  color: white;
+  padding: 30px 5%;
+  font-size: 18px;
+  width: 100%;
+  height: 175px;
+  border-radius: 0 0 15px 15px;
+}
+
+/* ideation section */
+.ideation-section, .brand-section, .mission-section, .traction-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.ideation-section p, .brand-section p, .traction-section p{
+  margin-top: 20px;
+  max-width: 595px;
+}
+.text-mt{
+  margin-top: 30px;
+}
+.ideation-section img, .traction-section img{
+  width: 400px;
+  border-left: 1px solid #3d0745;
+}
+
+/* brand-section  */
+.brand-section img{
+  width: 400px;
+  border-right: 1px solid #3d0745;
+}
+.brand-section button{
+  margin-top: 20px;
+  
+}
+.btn-a{
+  color: white;
+  text-decoration: none;
+}
+#brandi{
+  color: white;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+/* mission-section */
+.mission-section{
+  background-color: #4d217d;
+  color: white;
+}
+.mission-section h3{
+  color: white;
+}
+.mission-section p{
+  max-width: 500px;
+}
+
+/* traction section */
+
+
+/* team section */
+.team-section h2{
+text-align: center;
+margin-bottom: 40px;
+}
+.team-card-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+.team-card{
+  width: 180px;
+  margin-bottom: 50PX;
+}
+.team-name{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.team-card img{
+  width: 180px;
+  height: 185px;
+  background-color: #4d217d;
+  border: 2px solid #4d217d;
+  border-bottom-right-radius: 40%;
+}
+.team-card p{
+  font-size: 17px;
+}
+.team-name h5{
+  margin-bottom: 0px;
+}
+.team-name i{
+  font-size: 20px;
+  margin-left: 5px;
+}
+.new-talent{
+  background-color: #4d217d;
+  text-align: center;
+  color: #fff;
+  border-radius:0 0 15px 15px;
+  padding: 50px 20px;
+}
+/* Partnership section */
+.partnership h2{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.partner-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.partner-logo img{
+  width: 120px;
+  border-radius: 8px;
+}
+
+
 
 
 /************** Footer **************/
@@ -381,6 +539,7 @@ footer a{
   margin-bottom: 20px;
 }
 .top-footer>h1{
+  font-size: 36px;
   line-height: normal;
 }
 .qr-code{
@@ -459,7 +618,7 @@ footer a{
   .active{
     display: flex;
   }
-  /* home */
+  /***** home ********/
   h1{
     font-size: 3em;
     line-height: 1;
@@ -515,7 +674,20 @@ footer a{
   .card{
     width: 300px;
   }
-  /* footer */
+
+  /************ About **************/
+   /* ideation section */
+  .ideation-section img, .traction-section img{
+    width: 300px;
+    border-left: none;
+  }
+  /* brand-section  */
+  .brand-section img{
+    width: 300px;
+    border-right:none;
+  }
+
+  /************* footer *******/
   .top-footer>h1{
     font-size:1em;
   }

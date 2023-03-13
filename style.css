@@ -146,7 +146,7 @@ li, a, .btn{
 }
 
 
-/***************** Home ********************/
+/********************************* Home Page ***********************************/
 /* hero section */
 .hero-section{
   display: flex;
@@ -360,7 +360,7 @@ swiper-slide img {
   padding: 0 20px;
 }
 
-/***************** About ****************/
+/************************************ About Page *******************************/
 /* innovation-section */
 .innovation-section {
   position: relative; 
@@ -517,10 +517,104 @@ margin-bottom: 40px;
   border-radius: 8px;
 }
 
+/****************************** How It Works Page  *****************************/
+/* on-boarding section */
+.circle{
+  position: absolute;
+  margin-top: 20px;
+  height: 170px;
+  width: 170px;
+  background-color: #4d217d;
+  border-radius: 50%;
+}
+.download_steps_container{
+  padding: 70px 10px 50px 60px;
+  max-width: 950px;
+  border: 1px solid #4d217d;
+  border-radius: 25px;
+  margin-left: 120px;
+}
+.download_steps_container h3{
+  margin-bottom: 40px;
+}
+.download_steps_container h5{
+  margin-bottom: 60px;
+}
+.btn_playstore{
+  border-radius: 10px;
+  color: #fff;
+  background-color: #4d217d;
+  padding: 10px 15px;
+  margin-left: 10px;
+}
+.btn_playstore i{
+  font-size: 20px;
+  color: #fff;
+  margin-right: 10px;
+}
+.download_container{
+  margin-bottom: 30px;
+}
+.steps_to_use_box{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.shadow{
+  box-shadow: -5px 5px 57px -12px #4d217d;
+}
+.how_to_use_image_container{
+  margin-top: -30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.how_to_use_image_container img{
+  width: 270px;
+  height: 440px;
+  border-radius: 15px;
+  border: 2px solid #4d217d;
+}
+.image2{
+  margin-top: 20px;
+  margin-left: -20px;
+}
+.image3{
+  margin-top: 40px;
+  margin-left: -20px;
+}
+.easy-app{
+  display: flex;
+  justify-content: center;
+}
+/***** Book Store Section*/
+.book_store{
+  color: #fff;
+  background-color: #4d217d;
+}
+.book_store>div{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.book_store>div img{
+  max-width: 400px;
+  border-radius: 25px;
+}
+.book_store_text{
+  max-width: 400px;
+}
+.book_store_text a{
+  color: #fff;
+  text-decoration: underline;
+}
 
-
-
-/************** Footer **************/
+/********************************** Footer *************************************/
 footer{ 
   background-color:#e9ebec;
   padding: 50px 0 20px;
@@ -618,7 +712,7 @@ footer a{
   .active{
     display: flex;
   }
-  /***** home ********/
+  /*********************************** Home Page *******************************/
   h1{
     font-size: 3em;
     line-height: 1;
@@ -675,7 +769,7 @@ footer a{
     width: 300px;
   }
 
-  /************ About **************/
+  /******************************** About Page *********************************/
    /* ideation section */
   .ideation-section img, .traction-section img{
     width: 300px;
@@ -687,7 +781,45 @@ footer a{
     border-right:none;
   }
 
-  /************* footer *******/
+  /******************************* How It Works Page ***************************/
+  /* on-boarding section */
+  .circle{
+    height: 120px;
+    width: 120px;
+    margin-top: -70px;
+  }
+  .download_steps_container{
+  padding: 70px 10px 50px 20px;
+  margin-left: 0px;
+  }
+  .btn_playstore{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin-top: 10px;
+  }
+  .image2{
+    margin-top: -10px;
+    margin-left: 0px;
+  }
+  .image3{
+    margin-top: -10px;
+    margin-left: 0px;
+  }
+  /**** book store section ****/
+  .book_store_reverse{
+    flex-direction: column-reverse;
+    margin-top: 70px;
+  }
+  .book_store>div img{
+    max-width: 330px;
+    border-radius: 25px;
+  }
+  .book_store_text{
+    text-align: center;
+  }
+
+  /************************************** footer *******************************/
   .top-footer>h1{
     font-size:1em;
   }

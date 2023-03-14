@@ -1,6 +1,6 @@
 const toggleButton = document.getElementsByClassName('toggle-button')[0];
 const navbarLinks = document.getElementsByClassName('links')[0]
-const contact = document.getElementsByClassName('btn')[0]
+const contact = document.getElementsByClassName('hearder-btn')[0]
 const faqToggleButtons = document.querySelectorAll('.faq-toggle');
 
 console.log(navbarLinks)

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kura | App</title>
-    <link rel="shortcut icon" href="./assets/icons/favicon.PNG" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/icons/favicon.jpeg" type="image/x-icon">
     <meta name="description" content="">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./style.css">
@@ -30,7 +30,7 @@
             <li><a href="surveys.html">Surveys</a></li>
           </ul>
         </nav>
-        <a href="contact.html" class="btn">Contact Us</a>
+        <a href="contact.html" class="btn hearder-btn">Contact Us</a>
       </header>
       
       <main>
@@ -59,9 +59,15 @@
                 <label class="label" for="location">Location/City</label>
                 <input class="input" type="text" name="location" placeholder="Lagos">
               </div>
-              <div>
-                <label class="label" for="phone">Phone Number</label>
-                <input class="input" type="tel" name="phone" placeholder="7946 0000">
+              <div class="password-group">
+                <div>
+                <label class="label" for="password">Password</label>
+                <input class="short-input" type="password" name="password" placeholder="**********">
+                </div>
+                <div>
+                <label class="label" for="confirm_password">Confirm Password</label>
+                <input class="short-input" type="password" name="confirm_password" placeholder="**********">
+                </div>
               </div>
               <div>
                 <input type="checkbox">
@@ -87,7 +93,7 @@
             <div class="swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <div class="featuresBox">
+                  <div class="featuresBox featuresBox1">
                     <i class="fa-solid fa-shop-lock"></i>
                     <h3>e-hub</h3>
                     <p>Now, students can exchange, recycle, convert and transact their used school items for a token with one another.</p>
@@ -96,7 +102,7 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="featuresBox">
+                  <div class="featuresBox featuresBox2">
                     <i class="bi bi-mortarboard-fill"></i>
                     <h3>scholarship</h3>
                     <p>The scholarships on our platform are tailored to your needs and interest with many options to 
@@ -109,7 +115,7 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="featuresBox">
+                  <div class="featuresBox featuresBox3">
                     <i class="bi bi-info-circle-fill"></i>
                     <h3>beta help</h3>
                     <p>
@@ -123,7 +129,7 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="featuresBox">
+                  <div class="featuresBox featuresBox4">
                     <i class="bi bi-house-check-fill"></i>
                     <h3>accommodation</h3>
                     <p>Searching for school accommodation is now easy, you can find vacant rooms, hostels and roommates 
@@ -134,7 +140,7 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="featuresBox">
+                  <div class="featuresBox featuresBox5">
                     <i class="bi bi-book-half"></i>
                     <h3>e-library</h3>
                     <p>Our e-library offers researchers and students access to scholarly resources and available  
@@ -147,7 +153,7 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="featuresBox">
+                  <div class="featuresBox featuresBox6">
                     <i class="bi bi-journals"></i>
                     <h3>bookstore</h3>
                     <p>
@@ -179,12 +185,12 @@
           <h2>Kura Impact (KI)</h2>
           <p class="kura-impact-text">We would like to support students and make a difference.</p>
           <div>
-            <div class="border box">
+            <!-- <div class="border box">
               <h4>VidStory</h4>
               <img src="./assets/images/Val-picx2.png" alt="Kura App val">
               <p>In Association with Valentine, giving you access to documented video stories around valued topics and other resources.</p>
               <button class="btn">Explore More</button>
-            </div>
+            </div> -->
             <div class="box">
               <h4>Kura Endowment Scholarship</h4>
               <img src="./assets/images/scholar-icon.png" alt="">
@@ -208,14 +214,14 @@
           <button class="btn">Get in touch</button>
         </div>
         <div class="testimonial-section layout border">
-          <div>
+          <div class="left-container">
             <img class="user-rating" src="./assets/images/Rate1.jpeg" alt="">
             <img class="user-rating" src="./assets/images/Rate2.jpeg" alt="">
           </div>
           <div class="circular-div">
             <img class="user-rating-img" src="./assets/images/user_rating.png" alt="">
           </div>
-          <div>
+          <div class="right-container">
             <img class="user-rating" src="./assets/images/Rate3.jpeg" alt="">
             <img class="user-rating" src="./assets/images/Rate4.jpg" alt="">
           </div>
@@ -231,19 +237,7 @@
               <img src="./assets/images/slide2.png" />
             </swiper-slide>
             <swiper-slide>
-              <img src="./assets/images/slide3.png" />
-            </swiper-slide>
-            <swiper-slide>
-              <img src="./assets/images/slide4.png" />
-            </swiper-slide>
-            <swiper-slide>
-              <img src="./assets/images/slide5.png" />
-            </swiper-slide>
-            <swiper-slide>
               <img src="./assets/images/slide6.png" />
-            </swiper-slide>
-            <swiper-slide>
-              <img src="./assets/images/slide7.png" />
             </swiper-slide>
             <swiper-slide>
               <img src="./assets/images/slide8.png" />
@@ -302,12 +296,12 @@
           <div>
             <h5>Legal Statement</h5>
             <a href="" >Privacy Statement</a>
-            <a href="" >Privacy Statement</a>
-            <a href="" >Privacy Statement</a>
+            <a href="" >Terms and Conditions</a>
+            <a href="" >Cookie Policy</a>
           </div>
           <div>
             <h5>Help & Support</h5>
-            <a href="" >FAQ</a>
+            <a href="./faq.html" >FAQ</a>
             <a href="" >Subscription Plan</a>
             <a href="" >How it works</a>
           </div>
@@ -318,7 +312,7 @@
             <a href="" >Contact</a>
           </div>
           <div>
-            <h5>Fllow Us</h5>
+            <h5>Follow Us</h5>
             <img class="bottom-footer-logo" src="./assets/icons/logo.svg" alt="Kura App">
             <div class="social_icon_wraper">
               <a href="facebook"><i class="fa-brands fa-square-facebook" id="social_icon"></i></a>
@@ -330,7 +324,7 @@
             <a href="" >www.thekura.co</a>
           </div>
         </div>
-        <p class="copy">Copyright ©2021 Kura Corp. | Your study companion | admin@thekura.co</p>
+        <p class="copy">Copyright ©2022 Kura. | Your study companion | admin@thekura.co</p>
       </footer>
 
     </div>

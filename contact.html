@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kura | App</title>
-    <link rel="shortcut icon" href="./assets/icons/favicon.PNG" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/icons/favicon.jpeg" type="image/x-icon">
     <meta name="description" content="">
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/1276c1823c.js" crossorigin="anonymous"></script>
@@ -22,7 +22,7 @@
         </a>
         <nav class="links"> <!--second part -->
           <ul>
-            <li><a href="index.html" id="active">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About us</a></li>
             <li><a href="appFeatures.html">App Features</a></li>
             <li><a href="howItWork.html">How it works</a></li>
@@ -33,8 +33,42 @@
       </header>
       
       <main>
-        <div>
-          
+        <div class="hero-section layout border">
+          <div class="hero1">
+            <h1>Your N0:1 Study <span>Companion App.</span></h1>
+            <p>Now, every student can find any resources with KuraApp.</p>
+          </div>
+          <div class="hero2 border">
+            <h2>Join Kura Community</h2>
+            <div>I am a <a class="cta">Student </a> <a class="cta">Non-Student</a> </div>
+            <form action="" class="hero-form">
+              <div>
+                <label class="label" for="fullName">Full Name</label>
+                <input class="input" type="text" name="fullName" placeholder="Johh Buzz">
+              </div>
+              <div>
+                <label class="label" for="email">Email</label>
+                <input class="input" type="email" name="email" placeholder="Joh@example.com">
+              </div>
+              <div>
+                <label class="label" for="school">School</label>
+                <input class="input" type="text" name="school" placeholder="Queen Ethelburga">
+              </div>
+              <div>
+                <label class="label" for="location">Location/City</label>
+                <input class="input" type="text" name="location" placeholder="Lagos">
+              </div>
+              <div>
+                <label class="label" for="phone">Phone Number</label>
+                <input class="input" type="tel" name="phone" placeholder="7946 0000">
+              </div>
+              <div>
+                <input type="checkbox">
+                <label class="checkbox-label" for="phone"> I agree with Kura Terms & Conditions and Privacy Policy</label>
+              </div>
+              <button type="submit" class="btn">Get Kura App</button>
+            </form>
+          </div>
         </div>
       </main>
       
@@ -70,12 +104,12 @@
           <div>
             <h5>Legal Statement</h5>
             <a href="" >Privacy Statement</a>
-            <a href="" >Privacy Statement</a>
-            <a href="" >Privacy Statement</a>
+            <a href="" >Terms and Conditions</a>
+            <a href="" >Cookie Policy</a>
           </div>
           <div>
             <h5>Help & Support</h5>
-            <a href="" >FAQ</a>
+            <a href="./faq.html" >FAQ</a>
             <a href="" >Subscription Plan</a>
             <a href="" >How it works</a>
           </div>
@@ -86,7 +120,7 @@
             <a href="" >Contact</a>
           </div>
           <div>
-            <h5>Fllow Us</h5>
+            <h5>Follow Us</h5>
             <img class="bottom-footer-logo" src="./assets/icons/logo.svg" alt="Kura App">
             <div class="social_icon_wraper">
               <a href="facebook"><i class="fa-brands fa-square-facebook" id="social_icon"></i></a>

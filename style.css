@@ -202,9 +202,24 @@ li, a, .btn{
   background-color:rgb(111, 47, 171);
   color: white;
 }
-
+.form-footer{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.signin-option{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.signin-option i{
+  font-size: 20px;
+}
 /* video section */
 .video-section{
+  padding: 50px 5%;
   text-align: center;
 }
 iframe{
@@ -370,6 +385,9 @@ iframe{
 }
 #extra-mb2{
   margin-bottom: 55px;
+}
+#extra-mb1{
+  margin-bottom: 15px;
 }
 
 /* testimonial section */
@@ -730,8 +748,18 @@ margin-bottom: 40px;
 }
 
 /*********************************** FAQ Page  *******************************/
-.faq_img{
-  width: 100%;
+.faq-header{
+  margin-bottom: 50px;
+  padding:20px;
+  background-color: #4d217d;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  background-image: linear-gradient(45deg, transparent 20%, black 25%, transparent 25%),
+                    linear-gradient(-45deg, transparent 20%, black 25%, transparent 25%),
+                    linear-gradient(-45deg, transparent 75%, black 80%, transparent 0),
+                    radial-gradient(gray 2px, transparent 0);
+  background-size: 30px 30px, 30px 30px;
 }
 .faq-question {
   display: flex;
@@ -739,7 +767,7 @@ margin-bottom: 40px;
   align-items: center;
   gap: 15px;
   background-color: #eee;
-  padding: 10px 2rem;
+  padding-right: 10px;
   border-radius: 5px;
   margin-bottom: 1rem;
 }
@@ -750,22 +778,22 @@ margin-bottom: 40px;
 .faq-answer {
   display: none;
   background-color: #fff;
-  padding: .5rem;
+  padding: .5rem .5rem .5rem 3rem;
   border-radius: 5px;
   margin-bottom: 1.5rem;
   margin-top: -1rem;
 }
 .faq-toggle {
   font-size: 2rem;
-  background-color: #eee;
   border: none;
-  border-radius: 50%;
-  height: 2rem;
-  width: 2rem;
+  height: 3rem;
+  min-width: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  background-color: #4d217d;
+  color: white;
 }
 .faq-toggle:focus {
   outline: none;
@@ -782,7 +810,36 @@ margin-bottom: 40px;
   content: '+';
 }
 .active{
-  display: flex;
+  display: block;
+}
+.faq-ol {
+  list-style-type: lower-alpha;
+}
+.faq-ol li{
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+/**************************** Cookies Policy Page *****************************/
+.cookies>div{
+  margin-bottom: 30px;
+}
+ul{
+  margin-left: 30px;
+}
+.cookies h4{
+  margin-bottom: 10px;
+}
+.cookies p{
+  text-align: justify;
+}
+/***************************** Privacy Page **********************************/
+.privacy-ol{
+  list-style-type: upper-alpha;
+}
+.privacy-ol li{
+  margin: 10px 0 15px 30px;
+  font-size: 18px;
 }
 
 /********************************** Footer *************************************/
@@ -854,6 +911,10 @@ footer a{
 
   /**************************** Mobile Responsiveness **************************/
 @media (max-width:800px){
+  /* mobile mb */
+  .hero-section,.innovation-section,.on-boarding,.faq,.cookies{
+    margin-top: 120px;
+  }
   /* header */
   .toggle-button{
     display: flex;
@@ -900,7 +961,6 @@ footer a{
   }
   .hero-section{
     flex-direction: column;
-    margin-top: 120px;
   }
   .hero1>p{
     font-size: 30px;
@@ -909,6 +969,9 @@ footer a{
   .hero2{
     width: 100%;
     margin-bottom: 20px;
+  }
+  .short-input{
+    width: 140px;
   }
    /* benefit section */
   .benefit-section>div{
@@ -945,7 +1008,7 @@ footer a{
   }
 
   /******************************** About Page *********************************/
-   /* ideation section */
+  /* ideation section */
   .ideation-section img, .traction-section img{
     width: 300px;
     border-left: none;
@@ -1001,7 +1064,7 @@ footer a{
   }
 
   /*********************************** FAQ Page  *******************************/
-
+  
   /************************************** footer *******************************/
   .top-footer>h1{
     font-size:1em;

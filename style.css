@@ -899,11 +899,13 @@ ul{
 .privacy-ol{
   list-style-type: upper-alpha;
 }
-.privacy-ol li{
+.privacy-ol li, .inner-ol li{
   margin: 10px 0 15px 30px;
   font-size: 18px;
 }
-
+.inner-ol{
+  list-style-type: lower-roman;
+}
 /***************************** Privacy Page **********************************/
 .survey{
   display: flex;

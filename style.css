@@ -809,6 +809,65 @@ textarea{
   border:1px solid gainsboro;
 }
 
+/*********************************** Subscription Page  *******************************/
+.subscription{
+  overflow: hidden;
+}
+.subscription-header{
+  padding: 50px 5%;
+  background-color: #4d217d;
+  text-align: center;
+  color: #fff;
+}
+.subscription-header h2{
+  color: #fff;
+}
+.planh4{
+  margin-top: 50px;
+  padding: 0 5%;
+  text-align: center;
+}
+.subscription-card-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 30px 0 50px 0;
+}
+.subscription-card{
+  position: relative;
+  border-radius: 25px 0 25px 0;
+  overflow: hidden;
+  width: 240px;
+  height: 440px;
+  border: 1px solid #4d217d;
+  border-radius: 20px 0px 20px 0px;
+}
+.subscription-card-header, .subscription-card-footer{
+  background-color: #4d217d;
+  text-align: center;
+  padding: 20px;
+  
+}
+.subscription-card-header h3{
+  color: #fff;
+  margin-bottom: 0;
+}
+.subscription-card-body{
+  padding: 10px 20px;
+  text-align: center;
+}
+.subscription-card-footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.subscription-card-footer h4{
+  color: #fff;
+  margin-bottom: 0;
+}
 /*********************************** FAQ Page  *******************************/
 .faq-header{
   margin-bottom: 50px;
@@ -1004,7 +1063,7 @@ footer a{
 
   @media (max-width:870px){
   /* mobile mb */
-  .hero-section,.innovation-section,.on-boarding,.faq,.cookies,.survey,.contact{
+  .hero-section,.innovation-section,.on-boarding,.faq,.cookies,.survey,.contact,.subscription{
     margin-top: 120px;
   }
   /* header */

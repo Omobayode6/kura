@@ -252,7 +252,7 @@ iframe{
   background-position: center;
   background-size: cover;
   width: 300px;
-  height: 480px;
+  height: 510px;
   background-color: #fff;
   text-align: center;
   box-shadow: 0 15p 50px rgba(0, 0, 0, 0.2);
@@ -265,22 +265,21 @@ iframe{
 .featuresBox{
   position: relative;
   width: 100%;
-  height: 480px;
+  height: 510px;
   padding:40px 25px;
 }
-.featuresBox i{
+.feature-icon{
   /* background-color: rgb(162, 168, 162); */
   border-radius: 50%;
-  padding: 20px;
-  width: 80px;
-  height: 80px;
+  padding: 10px;
+  width: 100px;
   margin: 0 auto;
 }
 .featuresBox1{
   border: 2px solid green;
   border-radius: 10px;
 }
-.featuresBox1 i{
+.featuresBox1 img{
   border: 1px solid green;
   color: green;
 }
@@ -288,7 +287,7 @@ iframe{
   border: 2px solid rgb(128, 15, 0);
   border-radius: 10px;
 }
-.featuresBox2 i{
+.featuresBox2 img{
   border: 1px solid rgb(128, 15, 0);
   color: rgb(128, 15, 0);
 }
@@ -296,7 +295,7 @@ iframe{
   border: 2px solid rgb(90, 0, 128);
   border-radius: 10px;
 }
-.featuresBox3 i{
+.featuresBox3 img{
   border: 1px solid rgb(90, 0, 128);
   color: rgb(90, 0, 128);
 }
@@ -304,7 +303,7 @@ iframe{
   border: 2px solid rgb(55, 174, 221);
   border-radius: 10px;
 }
-.featuresBox4 i{
+.featuresBox4 img{
   border: 1px solid rgb(55, 174, 221);
   color: rgb(55, 174, 221);
 }
@@ -312,7 +311,7 @@ iframe{
   border: 2px solid rgb(149, 145, 23);
   border-radius: 10px;
 }
-.featuresBox5 i{
+.featuresBox5 img{
   border: 1px solid rgb(149, 145, 23);
   color: rgb(149, 145, 23);
 }
@@ -320,7 +319,7 @@ iframe{
   border: 2px solid rgb(73, 68, 168);
   border-radius: 10px;
 }
-.featuresBox6 i{
+.featuresBox6 img{
   border: 1px solid rgb(73, 68, 168);
   color: rgb(73, 68, 168);
 }

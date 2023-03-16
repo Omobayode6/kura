@@ -904,6 +904,33 @@ ul{
   font-size: 18px;
 }
 
+/***************************** Privacy Page **********************************/
+.survey{
+  display: flex;
+  gap: 20px;
+}
+.survey img{
+  border-radius: 8px;
+  display: block;
+}
+.google-form-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 100%; /* 1:1 Aspect Ratio */
+}
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
 /********************************** Footer *************************************/
 footer{ 
   background-color:#e9ebec;
@@ -972,9 +999,10 @@ footer a{
 }
 
   /**************************** Mobile Responsiveness **************************/
-@media (max-width:800px){
+
+  @media (max-width:870px){
   /* mobile mb */
-  .hero-section,.innovation-section,.on-boarding,.faq,.cookies{
+  .hero-section,.innovation-section,.on-boarding,.faq,.cookies,.survey,.contact{
     margin-top: 120px;
   }
   /* header */
@@ -1124,6 +1152,13 @@ footer a{
   .faq-question h3{
     font-size: .8em;
   }
+  .survey{
+    display: block;
+    width: 100%;
+  }
+  .survey img{
+    display: none;
+  }
 
   /*********************************** Contact Page  *******************************/
   .contact{
@@ -1132,6 +1167,9 @@ footer a{
   .circle1, .circle2, .circle3{
     display: none;
   }
+
+  /*********************************** Contact Page  *******************************/
+  
   /*********************************** FAQ Page  *******************************/
   
   /************************************** footer *******************************/

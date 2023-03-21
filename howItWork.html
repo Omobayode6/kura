@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kura | App</title>
-    <link rel="shortcut icon" href="./assets/icons/favicon.jpeg" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/icons/favicon1.jpg" type="image/x-icon">
     <meta name="description" content="">
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/1276c1823c.js" crossorigin="anonymous"></script>
@@ -32,8 +32,8 @@
         <a href="contact.html" class="btn hearder-btn">Contact Us</a>
       </header>
       
-      <main>
-        <div class="on-boarding layout border">
+      <main class="border-top">
+        <div class="on-boarding layout">
           <div class="circle"></div>
           <div class="download_steps_container border">
             <h3>Cruise through the <br> on-boarding steps and get on Kura today</h3>
@@ -55,18 +55,22 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/1xjouUZi8yc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
-        <div class="book_store layout border">
+        <div class="book_store layout">
           <div>
             <div class="book_store_text">
-              <p>The BookStore feature of our App is an exclusive reserve to Writers, Authors, Lecturers, Book Vendors and Publishers <br>A poster must require a privilege access</p>
+              <p>The BookStore feature of our App is an exclusive reserve to Writers, Authors, Lecturers, Book Vendors and Publishers to list or advertise their novels,  books, textbooks and academic writings for users and readers to explore.</p>
+              <p>A poster must require verification for unlimited access.</p>
             </div>
             <img src="./assets/images/user17.jpg" alt="">
           </div>
           <div class="book_store_reverse">
-            <img src="./assets/images/user20.jpg" alt="">
+            <div>
+              <img src="./assets/images/user20.jpg" alt=""><br>
+              <p class="desktop-hidden">For more info, use our <a href="./faq.html">FAQ</a> or <a href="./contact.html">Contact Team</a></p>
+            </div>
             <div class="book_store_text">
               <p>Now, It’s time to join other Kura Users and experience a new vibe in resources sustainability, education and communal interaction</p><br>
-              <div>
+              <div class="mobile-hidden">
                 For more info, use our <a href="./faq.html">FAQ</a> or <a href="./contact.html">Contact Team</a>
               </div>
             </div>
@@ -74,7 +78,7 @@
         </div>   
       </main>
       
-      <footer class="layout border">
+      <footer class="layout border-bottom">
         <div class="top-footer">
           <h1>Scan and start using <br> Kura App today</h1>
           <i class="bi bi-qr-code-scan qr-code"></i>
@@ -133,6 +137,10 @@
             </div>
             <a href="" >www.thekura.co</a>
           </div>
+        </div>
+        <div class="visitors-stats">
+          <h4>Visitors Stats</h4>
+          <p>35</p>
         </div>
         <p class="copy">Copyright ©2022 Kura | Your study companion | admin@thekura.co</p>
       </footer>

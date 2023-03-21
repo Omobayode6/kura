@@ -1007,7 +1007,7 @@ ul{
 .inner-ol{
   list-style-type: lower-roman;
 }
-/***************************** Privacy Page **********************************/
+/***************************** SurveyPrivacy Page **********************************/
 .survey{
   display: flex;
   gap: 20px;
@@ -1018,7 +1018,7 @@ ul{
 }
 .google-form-container {
   position: relative;
-  width: 100%;
+  width: 200%;
   overflow: hidden;
   padding-top: 100%; /* 1:1 Aspect Ratio */
 }

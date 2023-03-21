@@ -510,8 +510,8 @@ swiper-slide img {
 .card{
   display: flex;
   align-items: center;
-  width: 200px;
-  height: 120px;
+  width: 210px;
+  height: 140px;
   background-color: #fff;
   border: none;
   border-radius: 10px;

@@ -18,6 +18,6 @@ faqToggleButtons.forEach(button => {
 });
 
 
-$.getJSON("https://api.countapi.xyz/hit/omobayode6.github.io/visits", function(response) {
+$.getJSON("https://api.countapi.xyz/hit/omobayode6.github.io/:kura", function(response) {
     $("#visits").text(response.value);
 });

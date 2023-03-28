@@ -755,7 +755,7 @@ margin-bottom: 40px;
 /***** Book Store Section*/
 .book_store{
   color: #fff;
-  background-color: #4d217d;
+  background-color: rgb(154, 121, 189);
 }
 .book_store>div{
   display: flex;

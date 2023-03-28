@@ -8,7 +8,7 @@
 }
 body{
   background-color:white;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   font-weight: 400;
   font-size: 1.2em;
   color: #2a2929;;
@@ -29,7 +29,7 @@ header{
   z-index: 2;
 }
 h1,h2,h3, h4{
-  font-family: 'Overpass', sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   color:#000080;
   font-weight: 700;
 }
@@ -51,7 +51,7 @@ h4{
   line-height: normal;
 }
 h5{
-  font-family: 'Overpass', sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 15px;

@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Overpass:ital,wght@0,600;0,700;1,600;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;500;600;700&display=swap');
 
 /* Reusable styles */
 *{
@@ -30,7 +29,7 @@ header{
   z-index: 2;
 }
 h1,h2,h3, h4{
-  font-family: 'Roboto Serif', serif;
+  font-family: 'Times New Roman', Times, serif;
   color:#000080;
   font-weight: 700;
 }
@@ -190,6 +189,9 @@ li, a, .btn{
 }
 .links li a:hover{
   color: black;
+}
+.phone_img{
+  display: none;
 }
 
 
@@ -421,10 +423,10 @@ iframe{
 /* testimonial section */
 .testimonial-section{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20;
+  gap: 50px;
 }
 .left-container{
   animation-name: flow-left;
@@ -453,14 +455,18 @@ iframe{
   width: 300px;
   height: 300px;
   border-radius: 50%;
+  animation-name: flow-right;
+  animation-duration: 3s;
+  position: relative;
   background-color: rgb(154, 121, 189);
 }
 .user-rating-img{
   position: relative;
-  left: 50px;
-  bottom: 50px;
-  width: 200px;
-  box-shadow: 0px 10px 14px -7px #276873;
+  left: 30px;
+  bottom: 100px;
+  width: 250px;
+  
+  /* box-shadow: 0px 10px 14px -7px #276873; */
 }
 .right-container{
   animation-name: flow-right;
@@ -581,6 +587,9 @@ swiper-slide img {
 }
 
 /* brand-section  */
+.brand-section{
+  margin-top: -20px;
+}
 .brand-section img{
   width: 400px;
   border-right: 1px solid #3d0745;
@@ -756,7 +765,7 @@ margin-bottom: 40px;
 /***** Book Store Section*/
 .book_store{
   color: #fff;
-  background-color: rgb(154, 121, 189);
+  background-color: #4d217d;
 }
 .book_store>div{
   display: flex;
@@ -781,20 +790,24 @@ margin-bottom: 40px;
 }
 
 /***************************** SurveyPrivacy Page **********************************/
-.survey{
-  display: flex;
-  gap: 20px;
-  padding: 50px 0;
-}
+
 .survey img{
-  border-radius: 8px;
-  display: block;
+  width: 100%;
+}
+.survey h2{
+  position: relative;
+  bottom: 150px;
+  padding:10px 5%;
+  margin-bottom: 0;
+  color: white;
+  background-color: rgba(77,33,125,.5);
 }
 .google-form-container {
   position: relative;
   width: 100%;
   overflow: hidden;
   padding-top: 100%; /* 1:1 Aspect Ratio */
+  margin-top: -140px;
 }
 .responsive-iframe {
   position: absolute;
@@ -900,7 +913,7 @@ textarea{
   border-radius: 25px 0 25px 0;
   overflow: hidden;
   width: 240px;
-  height: 500px;
+  height: 400px;
   border: 1px solid #4d217d;
   border-radius: 10px;
   padding: 10px;
@@ -1014,6 +1027,7 @@ textarea{
 /**************************** KES Page *****************************/
 .kes-hero{
   text-align: center;
+  margin-bottom: -10px;
 }
 .kes-hero img{
   max-width: 100%;
@@ -1041,8 +1055,17 @@ textarea{
 }
 
 /****************************** Ambassador Page *******************************/
+.ambassador-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.ambassador-header h2{
+  max-width: 600px;
+}
 .ambassador-header img{
-  width: 100%;
+  width: 300px;
 }
 
 /**************************** Cookies Policy Page *****************************/
@@ -1154,11 +1177,10 @@ footer a{
 }
 
   /**************************** Mobile Responsiveness **************************/
-
   @media (max-width:870px){
   /* mobile mb */
-  .hero-section,.on-boarding,.faq,.cookies,
-  .survey,.contact,.subscription,.kes,.ambassador, main{
+  
+  .on-boarding, main{
     margin-top: 120px;
   }
   /* header */
@@ -1192,8 +1214,14 @@ footer a{
   .active{
     display: flex;
   }
+  .layout{
+    padding: 50px 5%;
+  }
+  .layout1{
+    padding: 0 5% 50px;
+  }
   h1{
-    font-size: 3em;
+    font-size: 2.5em;
     line-height: 1;
     margin:35px 0;
   }
@@ -1201,7 +1229,19 @@ footer a{
     font-size: 1.5em;
     line-height: normal;
   }
+  .desktop_img{
+    display: none;
+  }
+  .phone_img{
+    display: block;
+  }
   /*********************************** Home Page *********************************/
+  .hero1 h1{
+    margin-top: 50px;
+  }
+  .hero1 h1, .hero1 p{
+    text-align: center;
+  }
   .input{
     width: 300px;
   }
@@ -1289,13 +1329,30 @@ footer a{
     width: fit-content;
     margin-top: 10px;
   }
+  .image1{
+    display: none;
+  }
   .image2{
     margin-top: -10px;
     margin-left: 0px;
+    display: none;
   }
   .image3{
     margin-top: -10px;
     margin-left: 0px;
+    display: none;
+  }
+  .how_to_use_image_container{
+    
+    background-color: #8460a6;
+    
+  }
+  .how_to_use_image_container img{
+    border: none; 
+  }
+  .spradMobile{
+    margin-top: 50px;
+    border: none;
   }
   /**** book store section ****/
   .book_store_reverse{
@@ -1318,12 +1375,8 @@ footer a{
   .faq-question h3{
     font-size: .8em;
   }
-  .survey{
-    display: block;
-    width: 100%;
-  }
-  .survey img{
-    display: none;
+  .google-form-container {
+    margin-top: -150px;
   }
   .kes-body>div{
     flex-direction: column;
@@ -1336,11 +1389,21 @@ footer a{
   .contact{
     flex-direction: column;
   }
+  .contact-left-div{
+    margin-top: -20px;
+  }
   .circle1, .circle2, .circle3{
     display: none;
   }
 
-  /*********************************** Contact Page  *******************************/
+  /*********************************** Ambassador Page  *******************************/
+  .ambassador-header{
+    margin-bottom: 50px;
+  }
+  .ambassador-header h2{
+    width: 300px;
+    text-align: center;
+  }
   
   /*********************************** FAQ Page  *******************************/
   

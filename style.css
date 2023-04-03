@@ -243,7 +243,8 @@ li, a, .btn{
   margin-right: 5px;
   padding: 5px 10px;
   cursor: pointer;
-  color: white;
+  color: #4d217d;
+  background-color:#fff;
 }
 .cta:hover{
   background-color:rgb(111, 47, 171);

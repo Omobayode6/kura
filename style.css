@@ -1078,8 +1078,6 @@ textarea{
 }
 .ambassador-header h2{
   max-width: 600px;
-  color: #fff;
-  background-color: #4d217d;
 }
 .ambassador-header img{
   width: 300px;
@@ -1420,6 +1418,9 @@ footer a{
   .ambassador-header h2{
     padding: 30px 20px;
     text-align: center;
+    color: #fff;
+    background-color: #4d217d;
+    border-radius: 15px 15px 0 0;
   }
   
   /*********************************** FAQ Page  *******************************/

@@ -1203,7 +1203,6 @@ footer a{
   /**************************** Mobile Responsiveness **************************/
   @media (max-width:870px){
   /* mobile mb */
-  
   .on-boarding, main{
     margin-top: 120px;
   }

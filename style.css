@@ -110,7 +110,7 @@ ol li{
   margin: 0 auto;
 }
 .layout{
-  padding: 100px 5%;
+  padding: 50px 5%;
 }
 .layout1{
   padding: 0 5% 100px;
@@ -194,49 +194,77 @@ li, a, .btn{
 .links li a:hover{
   color: black;
 }
-.phone_img{
+.phone_img, .mobile_img{
   display: none;
 }
 
 
 /********************************* Home Page ***********************************/
 /* hero section */
-.hero-section{
+.hero_section {
   display: flex;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 20px;
-  padding: 0 5%;
+  flex-direction: row-reverse;
+  margin: 50px 5%;
 }
-.hero1 span{
-  color: green;
+.hero_section>div{
+  max-width: 600px;
 }
-.hero1>p{
-  font-size: 40px;
-  color: #43196a;
-  font-weight: 600;
+.hero_form{
+  margin-top: 20px;
+  display: flex;
 }
-.hero2{
-  padding: 30px 25px 20px 25px;
-  min-width: 50%;
-  color: white;
+.hero_form input{
+  border-radius: 30px 0 0 30px;
+}
+.hero_form input, .hero_form button{
+  padding: 10px 20px;
+  border: 1px solid #4d217d;
+  outline: none;
+}
+.hero_form button{
+  position: relative;
+  right: 20px;
+  border-radius: 30px;
   background-color: #4d217d;
-}
-.hero2>div{
-  margin-bottom: 10px;
-}
-.hero2>h2{
   color: white;
 }
-.check{
+.sub_heading{
+  font-size: 40px; 
+  color: #418226;
+  font-weight: 600;
+  line-height: normal;
+}
+.hero_store{
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+.app_container{
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 20px;
+  gap:10px;
+  border-radius: 10px;
+  background-color: #f0eefa;
+  color: #fff;
+  margin-bottom: 5px;
+  padding: 5px 15px;
+  color: #000;
 }
-.checkbox-label{
-  display: inline-block;
-  font-size: 14px;
+.app_container h5{
+  font-size: 18px;
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: -8px;
 }
+.app_container p{
+  font-size: 16px;
+}
+.app_container i{
+  font-size: 30px;
+}
+
 .cta{
   border: 1px solid white;
   border-radius: 5px;
@@ -249,21 +277,6 @@ li, a, .btn{
 .cta:hover{
   background-color:rgb(111, 47, 171);
   color: #fff;
-}
-.form-footer{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 20px;
-}
-.signin-option{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-.signin-option i{
-  font-size: 20px;
 }
 /* video section */
 .video-section{
@@ -1080,17 +1093,24 @@ textarea{
 }
 
 /****************************** Ambassador Page *******************************/
-.ambassador-header {
+/* ambassador-header */
+.ambassador-header{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
 }
-.ambassador-header h2{
-  max-width: 600px;
+.ambassador-header h1{
+  text-transform: uppercase;
+  text-align: center;
 }
-.ambassador-header img{
-  width: 300px;
+.ambassador-header_footer{
+  background-color: #6f3f7b;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  margin-top: 50px;
+  width: fit-content;
+  margin: auto;
 }
 
 /**************************** Cookies Policy Page *****************************/
@@ -1259,33 +1279,33 @@ footer a{
   }
   .phone_img{
     display: flex;
-    width: 450px;;
+    max-width: 450px;
+  }
+  .mobile_img{
+    display: flex;
+    width: 360px;
   }
   /*********************************** Home Page *********************************/
-  .hero1 h1{
-    margin-top: 50px;
-  }
-  .hero1 h1, .hero1 p{
+  /* hero section */
+  .hero_section{
+    margin-bottom: 50px;
     text-align: center;
-  }
-  .input{
-    width: 300px;
-  }
-  .hero-section{
     flex-direction: column;
+    margin: 50px 0%;
   }
-  .hero1>p{
-    font-size: 30px;
-    line-height: normal;
+  .hero_section>div{
+    margin-top: -100px;
+    background-color: #f7f5f7;
+    opacity: .85;
+    max-width: 900px;
+    
   }
-  .hero2{
-    width: 100%;
-    margin-bottom: 20px;
+  .hero_store, .hero_form{
+    width: fit-content;
+    margin: 20px auto;
   }
-  .short-input{
-    width: 140px;
-  }
-   /* benefit section */
+
+  /* benefit section */
   .benefit-section>div{
     border-radius: 10px;
   }
@@ -1424,16 +1444,12 @@ footer a{
 
   /*********************************** Ambassador Page  *******************************/
   .ambassador-header{
-    margin-bottom: 50px;
+    flex-direction: column;
   }
-  .ambassador-header h2{
-    padding: 30px 20px;
-    text-align: center;
-    color: #fff;
-    background-color: #4d217d;
-    border-radius: 15px 15px 0 0;
+  .ambassador-header img{
+    max-width: 450px;
+    margin-bottom: 40px;
   }
-  
   /*********************************** FAQ Page  *******************************/
   
   /************************************** footer *******************************/

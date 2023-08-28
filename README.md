@@ -1,2 +1,2 @@
 # Kura Websit  
-visit the [demo page](https://omobayode6.github.io/kura/)
+visit the [demo page](www.thekura.co)

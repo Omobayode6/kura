@@ -1223,6 +1223,18 @@ footer a{
   text-align: center;
   font-size: 1rem;
 }
+.download-footer{
+  background-color: White;
+}
+.download{
+  display: flex;
+  background-color: #f7f7f7;
+}
+.download button{
+  text-transform: uppercase;
+}
+
+
 
   /**************************** Mobile Responsiveness **************************/
   @media (max-width:870px){
